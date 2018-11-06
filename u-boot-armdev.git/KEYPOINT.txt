@@ -1,0 +1,37 @@
+2016-6-6
+
+In "system.map" or "u-boot.map"
+You can know the code start address is from 0x01000000
+This address should be code address in "FLASH"
+
+01000000 T _start
+01000020 t _undefined_instruction
+..
+..
+
+But why *.lds start address is 0x00000000
+
+
+OUTPUT_FORMAT("elf32-littlearm", "elf32-littlearm", "elf32-littlearm")
+OUTPUT_ARCH(arm)
+ENTRY(_start)
+SECTIONS
+{
+        . = 0x00000000;
+        . = ALIGN(4);
+        .text   :
+        {
+
+
+It is because
+
+0x1000000 came from 
+
+./board/armltd/versatile/config.mk:TEXT_BASE = 0x01000000
+
+between link stage
+
+LDFLAGS += -Ttext $(TEXT_BASE)
+
+
+

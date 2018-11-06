@@ -1,0 +1,52 @@
+8
+
+dir
+2091
+svn://10.8.0.120/WG6205-17/trunk/source/user/busybox/testsuite/tail
+svn://10.8.0.120/WG6205-17
+
+
+
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d73858b1-f98b-cc4a-8364-cd2b8c2f8e09
+
+tail-n-works
+file
+
+
+
+
+2010-05-04T02:55:30.000000Z
+53653fb5a394302731da240d25c8bc13
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+tail-works
+file
+
+
+
+
+2010-05-04T02:55:30.000000Z
+d4ab6e2aee012f473e4482f6b498b2d4
+2009-03-22T09:36:57.031250Z
+15
+carl
+

@@ -1,0 +1,52 @@
+8
+
+dir
+2091
+svn://10.8.0.120/WG6205-17/trunk/source/user/busybox/testsuite/cat
+svn://10.8.0.120/WG6205-17
+
+
+
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d73858b1-f98b-cc4a-8364-cd2b8c2f8e09
+
+cat-prints-a-file
+file
+
+
+
+
+2010-05-04T02:55:30.000000Z
+9d59d091d0e2a5f9bbe3bae4ddac0985
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+cat-prints-a-file-and-standard-input
+file
+
+
+
+
+2010-05-04T02:55:30.000000Z
+03ed9bf1ab099b8b6f4ee1e0f67d46de
+2009-03-22T09:36:57.031250Z
+15
+carl
+

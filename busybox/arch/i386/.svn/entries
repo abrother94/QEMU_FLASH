@@ -1,0 +1,40 @@
+8
+
+dir
+2091
+svn://10.8.0.120/WG6205-17/trunk/source/user/busybox/arch/i386
+svn://10.8.0.120/WG6205-17
+
+
+
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d73858b1-f98b-cc4a-8364-cd2b8c2f8e09
+
+Makefile
+file
+
+
+
+
+2010-05-04T02:55:21.000000Z
+0e2b0efc9225b48a63b9e1d2379cc632
+2009-03-22T09:36:57.031250Z
+15
+carl
+

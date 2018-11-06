@@ -1,0 +1,462 @@
+This is uboot study test log !!!!!
+Configuring for versatile board...
+Variant:: versatilepb
+Generating include/autoconf.mk.dep
+for dir in tools examples api_examples ; do make -C $dir _depend ; done
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/tools'
+ln -s ../common/env_embedded.c env_embedded.c
+ln -s ../include/zlib.h zlib.h
+ln -s ../lib_generic/crc32.c crc32.c
+ln -s ../lib_generic/md5.c md5.c
+ln -s ../lib_generic/sha1.c sha1.c
+ln -s ../common/image.c image.c
+if [ ! -f mkimage.h ] ; then \
+			ln -s ../tools/mkimage.h mkimage.h; \
+		fi
+if [ ! -f fdt_host.h ] ; then \
+			ln -s ../tools/fdt_host.h fdt_host.h; \
+		fi
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/tools'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/tools'
+make[1]: Nothing to be done for `_depend'.
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/tools'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/examples'
+examples/Makefile last resort rule
+examples/Makefile last resort rule
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/examples'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/examples'
+examples/Makefile last resort rule
+examples/Makefile last resort rule
+examples/Makefile last resort rule
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/examples'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/api_examples'
+make[1]: Nothing to be done for `_depend'.
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/api_examples'
+Generating include/autoconf.mk
+make -C tools all
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/tools'
+gcc -Wall -pedantic -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o img2srec.o img2srec.c
+gcc -Wall -pedantic -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O  -o img2srec img2srec.o
+strip img2srec
+gcc -g -Wall -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o mkimage.o mkimage.c
+gcc -g -Wall -pedantic -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o crc32.o crc32.c
+gcc -g -Wall -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o image.o image.c
+gcc -g -Wall -pedantic -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o md5.o md5.c
+gcc -g -Wall -pedantic -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o sha1.o sha1.c
+ln -s ../libfdt/libfdt_internal.h libfdt_internal.h
+ln -s ../libfdt/fdt.c fdt.c
+gcc -g -Wall -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o fdt.o fdt.c
+ln -s ../libfdt/fdt_ro.c fdt_ro.c
+gcc -g -Wall -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o fdt_ro.o fdt_ro.c
+ln -s ../libfdt/fdt_rw.c fdt_rw.c
+gcc -g -Wall -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o fdt_rw.o fdt_rw.c
+ln -s ../libfdt/fdt_strerror.c fdt_strerror.c
+gcc -g -Wall -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o fdt_strerror.o fdt_strerror.c
+ln -s ../libfdt/fdt_wip.c fdt_wip.c
+gcc -g -Wall -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o fdt_wip.o fdt_wip.c
+gcc -Wall -pedantic -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O  -o mkimage mkimage.o crc32.o image.o md5.o sha1.o fdt.o fdt_ro.o fdt_rw.o fdt_strerror.o fdt_wip.o
+strip mkimage
+gcc -g -Wall -pedantic -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o envcrc.o envcrc.c
+gcc -g  -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -c -o env_embedded.o env_embedded.c
+gcc -Wall -pedantic -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -o envcrc envcrc.o crc32.o env_embedded.o sha1.o
+gcc -g -Wall -pedantic -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o ubsha1.o ubsha1.c
+gcc -Wall -pedantic -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -o ubsha1 ubsha1.o sha1.o
+gcc -g -Wall -pedantic -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o gen_eth_addr.o gen_eth_addr.c
+gcc -Wall -pedantic -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O  -o gen_eth_addr gen_eth_addr.o
+strip gen_eth_addr
+gcc -Wall -pedantic -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o bmp_logo.o bmp_logo.c
+gcc -Wall -pedantic -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include2 -idirafter /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O  -o bmp_logo bmp_logo.o
+strip bmp_logo
+./bmp_logo logos/denx.bmp >/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include/bmp_logo.h
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/tools'
+make -C examples all
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/examples'
+examples/Makefile last resort rule
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o hello_world.o hello_world.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o stubs.o stubs.c
+arm-none-linux-gnueabi-ar crv libstubs.a stubs.o
+a - stubs.o
+arm-none-linux-gnueabi-ld -g  -Ttext 0xc100000 \
+			-o hello_world -e hello_world hello_world.o libstubs.a \
+			-L/opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1 -lgcc
+arm-none-linux-gnueabi-objcopy -O srec hello_world hello_world.srec 2>/dev/null
+arm-none-linux-gnueabi-objcopy -O binary hello_world hello_world.bin 2>/dev/null
+examples/Makefile last resort rule
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/examples'
+make -C api_examples all
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/api_examples'
+arm-none-linux-gnueabi-ar crv libglue.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/api_examples'
+make -C cpu/arm926ejs start.o
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/cpu/arm926ejs'
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/cpu/arm926ejs'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/cpu/arm926ejs'
+arm-none-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -c -o start.o start.S
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/cpu/arm926ejs'
+make -C lib_generic/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/lib_generic'
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/lib_generic'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/lib_generic'
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o crc16.o crc16.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o crc32.o crc32.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o ctype.o ctype.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o display_options.o display_options.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o div64.o div64.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o gunzip.o gunzip.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o lmb.o lmb.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o ldiv.o ldiv.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o sha1.o sha1.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o string.o string.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o strmhz.o strmhz.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o vsprintf.o vsprintf.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o zlib.o zlib.c
+arm-none-linux-gnueabi-ar crv libgeneric.a crc16.o crc32.o ctype.o display_options.o div64.o gunzip.o lmb.o ldiv.o sha1.o string.o strmhz.o vsprintf.o zlib.o
+a - crc16.o
+a - crc32.o
+a - ctype.o
+a - display_options.o
+a - div64.o
+a - gunzip.o
+a - lmb.o
+a - ldiv.o
+a - sha1.o
+a - string.o
+a - strmhz.o
+a - vsprintf.o
+a - zlib.o
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/lib_generic'
+make -C lib_generic/lzma/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/lib_generic/lzma'
+arm-none-linux-gnueabi-ar crv liblzma.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/lib_generic/lzma'
+make -C cpu/arm926ejs/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/cpu/arm926ejs'
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o interrupts.o interrupts.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o cpu.o cpu.c
+arm-none-linux-gnueabi-ar crv libarm926ejs.a interrupts.o cpu.o
+a - interrupts.o
+a - cpu.o
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/cpu/arm926ejs'
+make -C cpu/arm926ejs/versatile/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/cpu/arm926ejs/versatile'
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/cpu/arm926ejs/versatile'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/cpu/arm926ejs/versatile'
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o timer.o timer.c
+arm-none-linux-gnueabi-ar crv libversatile.a timer.o
+a - timer.o
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/cpu/arm926ejs/versatile'
+make -C lib_arm/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/lib_arm'
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/lib_arm'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/lib_arm'
+arm-none-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -c -o _ashldi3.o _ashldi3.S
+arm-none-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -c -o _ashrdi3.o _ashrdi3.S
+arm-none-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -c -o _divsi3.o _divsi3.S
+arm-none-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -c -o _modsi3.o _modsi3.S
+arm-none-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -c -o _udivsi3.o _udivsi3.S
+arm-none-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -c -o _umodsi3.o _umodsi3.S
+arm-none-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -c -o div64.o div64.S
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o board.o board.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o bootm.o bootm.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o cache.o cache.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o div0.o div0.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o interrupts.o interrupts.c
+arm-none-linux-gnueabi-ar crv libarm.a _ashldi3.o _ashrdi3.o _divsi3.o _modsi3.o _udivsi3.o _umodsi3.o div64.o board.o bootm.o cache.o div0.o interrupts.o
+a - _ashldi3.o
+a - _ashrdi3.o
+a - _divsi3.o
+a - _modsi3.o
+a - _udivsi3.o
+a - _umodsi3.o
+a - div64.o
+a - board.o
+a - bootm.o
+a - cache.o
+a - div0.o
+a - interrupts.o
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/lib_arm'
+make -C fs/cramfs/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/fs/cramfs'
+arm-none-linux-gnueabi-ar crv libcramfs.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/fs/cramfs'
+make -C fs/fat/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/fs/fat'
+arm-none-linux-gnueabi-ar crv libfat.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/fs/fat'
+make -C fs/fdos/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/fs/fdos'
+arm-none-linux-gnueabi-ar crv libfdos.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/fs/fdos'
+make -C fs/jffs2/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/fs/jffs2'
+arm-none-linux-gnueabi-ar crv libjffs2.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/fs/jffs2'
+make -C fs/reiserfs/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/fs/reiserfs'
+arm-none-linux-gnueabi-ar crv libreiserfs.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/fs/reiserfs'
+make -C fs/ext2/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/fs/ext2'
+arm-none-linux-gnueabi-ar crv libext2fs.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/fs/ext2'
+make -C fs/yaffs2/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/fs/yaffs2'
+arm-none-linux-gnueabi-ar crv libyaffs2.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/fs/yaffs2'
+make -C net/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/net'
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/net'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/net'
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o net.o net.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o tftp.o tftp.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o bootp.o bootp.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o rarp.o rarp.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o eth.o eth.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o nfs.o nfs.c
+arm-none-linux-gnueabi-ar crv libnet.a net.o tftp.o bootp.o rarp.o eth.o nfs.o
+a - net.o
+a - tftp.o
+a - bootp.o
+a - rarp.o
+a - eth.o
+a - nfs.o
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/net'
+make -C disk/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/disk'
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/disk'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/disk'
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o part.o part.c
+arm-none-linux-gnueabi-ar crv libdisk.a part.o
+a - part.o
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/disk'
+make -C drivers/bios_emulator/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/bios_emulator'
+arm-none-linux-gnueabi-ar crv libatibiosemu.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/bios_emulator'
+make -C drivers/block/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/block'
+arm-none-linux-gnueabi-ar crv libblock.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/block'
+make -C drivers/dma/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/dma'
+arm-none-linux-gnueabi-ar crv libdma.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/dma'
+make -C drivers/fpga/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/fpga'
+arm-none-linux-gnueabi-ar crv libfpga.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/fpga'
+make -C drivers/gpio/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/gpio'
+arm-none-linux-gnueabi-ar crv libgpio.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/gpio'
+make -C drivers/hwmon/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/hwmon'
+arm-none-linux-gnueabi-ar crv libhwmon.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/hwmon'
+make -C drivers/i2c/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/i2c'
+arm-none-linux-gnueabi-ar crv libi2c.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/i2c'
+make -C drivers/input/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/input'
+arm-none-linux-gnueabi-ar crv libinput.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/input'
+make -C drivers/misc/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/misc'
+arm-none-linux-gnueabi-ar crv libmisc.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/misc'
+make -C drivers/mmc/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/mmc'
+arm-none-linux-gnueabi-ar crv libmmc.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/mmc'
+make -C drivers/mtd/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/mtd'
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/mtd'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/mtd'
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o cfi_flash.o cfi_flash.c
+arm-none-linux-gnueabi-ar crv libmtd.a cfi_flash.o
+a - cfi_flash.o
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/mtd'
+make -C drivers/mtd/nand/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/mtd/nand'
+arm-none-linux-gnueabi-ar crv libnand.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/mtd/nand'
+make -C drivers/mtd/nand_legacy/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/mtd/nand_legacy'
+arm-none-linux-gnueabi-ar crv libnand_legacy.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/mtd/nand_legacy'
+make -C drivers/mtd/onenand/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/mtd/onenand'
+arm-none-linux-gnueabi-ar crv libonenand.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/mtd/onenand'
+make -C drivers/mtd/ubi/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/mtd/ubi'
+arm-none-linux-gnueabi-ar crv libubi.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/mtd/ubi'
+make -C drivers/mtd/spi/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/mtd/spi'
+arm-none-linux-gnueabi-ar crv libspi_flash.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/mtd/spi'
+make -C drivers/net/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/net'
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/net'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/net'
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o smc91111.o smc91111.c
+arm-none-linux-gnueabi-ar crv libnet.a smc91111.o
+a - smc91111.o
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/net'
+make -C drivers/net/phy/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/net/phy'
+arm-none-linux-gnueabi-ar crv libphy.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/net/phy'
+make -C drivers/net/sk98lin/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/net/sk98lin'
+arm-none-linux-gnueabi-ar crv libsk98lin.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/net/sk98lin'
+make -C drivers/pci/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/pci'
+arm-none-linux-gnueabi-ar crv libpci.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/pci'
+make -C drivers/pcmcia/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/pcmcia'
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/pcmcia'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/pcmcia'
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o rpx_pcmcia.o rpx_pcmcia.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o tqm8xx_pcmcia.o tqm8xx_pcmcia.c
+arm-none-linux-gnueabi-ar crv libpcmcia.a rpx_pcmcia.o tqm8xx_pcmcia.o
+a - rpx_pcmcia.o
+a - tqm8xx_pcmcia.o
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/pcmcia'
+make -C drivers/spi/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/spi'
+arm-none-linux-gnueabi-ar crv libspi.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/spi'
+make -C drivers/rtc/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/rtc'
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/rtc'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/rtc'
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o date.o date.c
+arm-none-linux-gnueabi-ar crv librtc.a date.o
+a - date.o
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/rtc'
+make -C drivers/serial/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/serial'
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/serial'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/serial'
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o serial_pl01x.o serial_pl01x.c
+arm-none-linux-gnueabi-ar crv libserial.a serial_pl01x.o
+a - serial_pl01x.o
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/serial'
+make -C drivers/usb/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/usb'
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/usb'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/usb'
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o usbdcore.o usbdcore.c
+arm-none-linux-gnueabi-ar crv libusb.a usbdcore.o
+a - usbdcore.o
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/usb'
+make -C drivers/video/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/video'
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/video'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/video'
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o videomodes.o videomodes.c
+arm-none-linux-gnueabi-ar crv libvideo.a videomodes.o
+a - videomodes.o
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/drivers/video'
+make -C common/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/common'
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/common'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/common'
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o circbuf.o circbuf.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o cmd_autoscript.o cmd_autoscript.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o cmd_bdinfo.o cmd_bdinfo.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o cmd_boot.o cmd_boot.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o cmd_bootm.o cmd_bootm.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o cmd_flash.o cmd_flash.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o cmd_load.o cmd_load.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o cmd_mem.o cmd_mem.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o cmd_nand.o cmd_nand.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o cmd_net.o cmd_net.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o cmd_nvedit.o cmd_nvedit.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o cmd_pcmcia.o cmd_pcmcia.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o cmd_testbutton.o cmd_testbutton.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o command.o command.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o console.o console.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o devices.o devices.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o dlmalloc.o dlmalloc.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o env_common.o env_common.c
+arm-none-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wa,--no-warn \
+		-DENV_CRC=0 \
+		-c -o env_embedded.o env_embedded.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o env_flash.o env_flash.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o exports.o exports.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o flash.o flash.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o image.o image.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o main.o main.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o memsize.o memsize.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o s_record.o s_record.c
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o xyzModem.o xyzModem.c
+arm-none-linux-gnueabi-ar crv libcommon.a circbuf.o cmd_autoscript.o cmd_bdinfo.o cmd_boot.o cmd_bootm.o cmd_flash.o cmd_load.o cmd_mem.o cmd_nand.o cmd_net.o cmd_nvedit.o cmd_pcmcia.o cmd_testbutton.o command.o console.o devices.o dlmalloc.o env_common.o env_embedded.o env_flash.o exports.o flash.o image.o main.o memsize.o s_record.o xyzModem.o
+a - circbuf.o
+a - cmd_autoscript.o
+a - cmd_bdinfo.o
+a - cmd_boot.o
+a - cmd_bootm.o
+a - cmd_flash.o
+a - cmd_load.o
+a - cmd_mem.o
+a - cmd_nand.o
+a - cmd_net.o
+a - cmd_nvedit.o
+a - cmd_pcmcia.o
+a - cmd_testbutton.o
+a - command.o
+a - console.o
+a - devices.o
+a - dlmalloc.o
+a - env_common.o
+a - env_embedded.o
+a - env_flash.o
+a - exports.o
+a - flash.o
+a - image.o
+a - main.o
+a - memsize.o
+a - s_record.o
+a - xyzModem.o
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/common'
+make -C libfdt/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/libfdt'
+arm-none-linux-gnueabi-ar crv libfdt.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/libfdt'
+make -C api/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/api'
+arm-none-linux-gnueabi-ar crv libapi.a 
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/api'
+make -C post/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/post'
+(echo create libpost.a; for lib in   ; \
+	 do echo addlib $lib; done; echo save) \
+	| arm-none-linux-gnueabi-ar -M
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/post'
+make -C board/armltd/versatile/
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/board/armltd/versatile'
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/board/armltd/versatile'
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/board/armltd/versatile'
+arm-none-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o versatile.o versatile.c
+arm-none-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -c -o lowlevel_init.o lowlevel_init.S
+arm-none-linux-gnueabi-ar crv libversatile.a versatile.o lowlevel_init.o
+a - versatile.o
+a - lowlevel_init.o
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/board/armltd/versatile'
+make -C /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/board/armltd/versatile/ u-boot.lds
+make[1]: Entering directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/board/armltd/versatile'
+make[1]: Nothing to be done for `u-boot.lds'.
+make[1]: Leaving directory `/home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/board/armltd/versatile'
+UNDEF_SYM=`arm-none-linux-gnueabi-objdump -x board/armltd/versatile/libversatile.a lib_generic/libgeneric.a lib_generic/lzma/liblzma.a cpu/arm926ejs/libarm926ejs.a cpu/arm926ejs/versatile/libversatile.a lib_arm/libarm.a fs/cramfs/libcramfs.a fs/fat/libfat.a fs/fdos/libfdos.a fs/jffs2/libjffs2.a fs/reiserfs/libreiserfs.a fs/ext2/libext2fs.a fs/yaffs2/libyaffs2.a net/libnet.a disk/libdisk.a drivers/bios_emulator/libatibiosemu.a drivers/block/libblock.a drivers/dma/libdma.a drivers/fpga/libfpga.a drivers/gpio/libgpio.a drivers/hwmon/libhwmon.a drivers/i2c/libi2c.a drivers/input/libinput.a drivers/misc/libmisc.a drivers/mmc/libmmc.a drivers/mtd/libmtd.a drivers/mtd/nand/libnand.a drivers/mtd/nand_legacy/libnand_legacy.a drivers/mtd/onenand/libonenand.a drivers/mtd/ubi/libubi.a drivers/mtd/spi/libspi_flash.a drivers/net/libnet.a drivers/net/phy/libphy.a drivers/net/sk98lin/libsk98lin.a drivers/pci/libpci.a drivers/pcmcia/libpcmcia.a drivers/spi/libspi.a drivers/rtc/librtc.a drivers/serial/libserial.a drivers/usb/libusb.a drivers/video/libvideo.a common/libcommon.a libfdt/libfdt.a api/libapi.a post/libpost.a | \
+		sed  -n -e 's/.*\(__u_boot_cmd_.*\)/-u\1/p'|sort|uniq`;\
+		cd /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git && arm-none-linux-gnueabi-ld -Bstatic -T /home/abrother/QEMU/QEMU_FLASH/u-boot-armdev.git/board/armltd/versatile/u-boot.lds  -Ttext 0x01000000 $UNDEF_SYM cpu/arm926ejs/start.o \
+			--start-group lib_generic/libgeneric.a lib_generic/lzma/liblzma.a cpu/arm926ejs/libarm926ejs.a cpu/arm926ejs/versatile/libversatile.a lib_arm/libarm.a fs/cramfs/libcramfs.a fs/fat/libfat.a fs/fdos/libfdos.a fs/jffs2/libjffs2.a fs/reiserfs/libreiserfs.a fs/ext2/libext2fs.a fs/yaffs2/libyaffs2.a net/libnet.a disk/libdisk.a drivers/bios_emulator/libatibiosemu.a drivers/block/libblock.a drivers/dma/libdma.a drivers/fpga/libfpga.a drivers/gpio/libgpio.a drivers/hwmon/libhwmon.a drivers/i2c/libi2c.a drivers/input/libinput.a drivers/misc/libmisc.a drivers/mmc/libmmc.a drivers/mtd/libmtd.a drivers/mtd/nand/libnand.a drivers/mtd/nand_legacy/libnand_legacy.a drivers/mtd/onenand/libonenand.a drivers/mtd/ubi/libubi.a drivers/mtd/spi/libspi_flash.a drivers/net/libnet.a drivers/net/phy/libphy.a drivers/net/sk98lin/libsk98lin.a drivers/pci/libpci.a drivers/pcmcia/libpcmcia.a drivers/spi/libspi.a drivers/rtc/librtc.a drivers/serial/libserial.a drivers/usb/libusb.a drivers/video/libvideo.a common/libcommon.a libfdt/libfdt.a api/libapi.a post/libpost.a board/armltd/versatile/libversatile.a --end-group -L /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1 -lgcc \
+			-Map u-boot.map -o u-boot
+arm-none-linux-gnueabi-objcopy -O srec u-boot u-boot.srec
+arm-none-linux-gnueabi-objcopy --gap-fill=0xff -O binary u-boot u-boot.bin

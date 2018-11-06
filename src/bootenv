@@ -1,0 +1,5 @@
+set bootargs root=/dev/mtdblock0 mtdparts=armflash.0:11868k@0x00200000(jffs2) ip=dhcp mem=128M console=ttyAMA0 video=vc:1-2clcdfb: rootfstype=jffs2
+cp 0x34080000 0x7fc0 0x00200000 
+
+
+

@@ -1,0 +1,25 @@
+* Add uboot cmd_testbutton.c ,modify "sudo ./flash.sh" "sudo ./KILL.sh" 2016/6/6
+* Add kernel 3.10.102 support flash boot, ram boot, 2016/6/17
+  * Use -S -s to remote debug to know that rootfs image cover the kernel code and cause qemu crash..
+	like:
+
+	#remote debug 
+	# ./qemu-system-arm-2.6.0-flash -M versatilepb  -m 256 -nographic -pflash ./flash.img -S -s
+	# arm-none-linux-gnueabi-gdb u-boot
+	# in gdb, 
+		* target remote:1234
+		* b dghere <---this dghere is asm("nop"); 
+		* layout asm
+		* layout regs
+		* c <-- will stop at dghere 
+		* n 
+		* n 
+		to check where is broken point.... 
+
+	In flash.sh
+	....
+        dd if=uImage of=./flash.img bs=256k seek=2 conv=notrunc
+        dd if=arm_rootjffs2.img of=./flash.img bs=256K seek=13 conv=notrunc
+	....
+	you need modiyf seek = 13 to fit kernal size 
+  * qemu-2.6 need modify to support flash boot, use the same method in qemu 0.10.2

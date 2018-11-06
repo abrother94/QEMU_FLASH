@@ -1,0 +1,52 @@
+8
+
+dir
+2091
+svn://10.8.0.120/WG6205-17/trunk/source/user/busybox/testsuite/head
+svn://10.8.0.120/WG6205-17
+
+
+
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d73858b1-f98b-cc4a-8364-cd2b8c2f8e09
+
+head-n-works
+file
+
+
+
+
+2010-05-04T02:55:30.000000Z
+54b277d9602a79eab3b82bf405e56be3
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+head-works
+file
+
+
+
+
+2010-05-04T02:55:30.000000Z
+fd9b9612901820fe8f641eb3179f3b9c
+2009-03-22T09:36:57.031250Z
+15
+carl
+

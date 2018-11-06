@@ -1,0 +1,53 @@
+8
+
+dir
+2091
+svn://10.8.0.120/WG6205-17/trunk/source/user/busybox/shell/ash_test/ash-invert
+svn://10.8.0.120/WG6205-17
+
+
+
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d73858b1-f98b-cc4a-8364-cd2b8c2f8e09
+
+invert.right
+file
+
+
+
+
+2010-05-04T02:55:18.000000Z
+08956d7fbd85b43a1b2b4c92df49fb8b
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+invert.tests
+file
+
+
+
+
+2010-05-04T02:55:18.000000Z
+bd27f09eeb7512051b14718dc124e482
+2009-03-22T09:36:57.031250Z
+15
+carl
+has-props
+

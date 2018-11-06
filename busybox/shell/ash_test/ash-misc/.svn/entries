@@ -1,0 +1,53 @@
+8
+
+dir
+2091
+svn://10.8.0.120/WG6205-17/trunk/source/user/busybox/shell/ash_test/ash-misc
+svn://10.8.0.120/WG6205-17
+
+
+
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d73858b1-f98b-cc4a-8364-cd2b8c2f8e09
+
+shift1.tests
+file
+
+
+
+
+2010-05-04T02:55:18.000000Z
+c659d48e297b547ed6352da407ec1e70
+2009-03-22T09:36:57.031250Z
+15
+carl
+has-props
+
+shift1.right
+file
+
+
+
+
+2010-05-04T02:55:18.000000Z
+ba914d6afcd4aaa91f9d99966042ea0a
+2009-03-22T09:36:57.031250Z
+15
+carl
+

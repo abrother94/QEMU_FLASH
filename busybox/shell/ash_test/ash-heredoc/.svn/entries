@@ -1,0 +1,53 @@
+8
+
+dir
+2091
+svn://10.8.0.120/WG6205-17/trunk/source/user/busybox/shell/ash_test/ash-heredoc
+svn://10.8.0.120/WG6205-17
+
+
+
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d73858b1-f98b-cc4a-8364-cd2b8c2f8e09
+
+heredoc.right
+file
+
+
+
+
+2010-05-04T02:55:18.000000Z
+20d4f1bd74574769d1aeabd66dbd1305
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+heredoc.tests
+file
+
+
+
+
+2010-05-04T02:55:18.000000Z
+8d9d93f4cf8521d2e539d47d8e139215
+2009-03-22T09:36:57.031250Z
+15
+carl
+has-props
+

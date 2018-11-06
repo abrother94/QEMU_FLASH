@@ -1,0 +1,256 @@
+8
+
+dir
+2091
+svn://10.8.0.120/WG6205-17/trunk/source/user/busybox
+svn://10.8.0.120/WG6205-17
+
+
+
+2009-05-15T08:55:06.281250Z
+486
+tyho
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d73858b1-f98b-cc4a-8364-cd2b8c2f8e09
+
+AUTHORS
+file
+
+
+
+
+2010-05-04T02:55:31.000000Z
+fe6abbae8b8d76a7a385690e38476d91
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+Makefile.custom
+file
+
+
+
+
+2010-05-04T02:55:31.000000Z
+a4bb8f3c06dd0f5e49209068ed4ecdca
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+networking
+dir
+
+scripts
+dir
+
+docs
+dir
+
+archival
+dir
+
+.indent.pro
+file
+
+
+
+
+2010-05-04T02:55:32.000000Z
+6bea8d1b7f6cfeb6b6c2a95596c69c6d
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+sysklogd
+dir
+
+modutils
+dir
+
+console-tools
+dir
+
+debianutils
+dir
+
+INSTALL
+file
+
+
+
+
+2010-05-04T02:55:32.000000Z
+ed6b4a650692190560a46c31ed2e245b
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+shell
+dir
+
+coreutils
+dir
+
+e2fsprogs
+dir
+
+libbb
+dir
+
+miscutils
+dir
+
+Makefile
+file
+
+
+
+
+2010-05-04T02:55:32.000000Z
+994e177fb570728cc150691348c9f317
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+arch
+dir
+
+LICENSE
+file
+
+
+
+
+2010-05-04T02:55:32.000000Z
+200d8180b263ccdabbb1a8a7c66b4480
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+include
+dir
+
+selinux
+dir
+
+testsuite
+dir
+
+loginutils
+dir
+
+libpwdgrp
+dir
+
+README
+file
+
+
+
+
+2010-05-04T02:55:32.000000Z
+f7a79fb217700aebd4eb0f67d190c4c7
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+runit
+dir
+
+findutils
+dir
+
+init
+dir
+
+Makefile.help
+file
+
+
+
+
+2010-05-04T02:55:32.000000Z
+8523a3e8ba23e8458f0d153e5a6974cb
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+TODO_config_nommu
+file
+
+
+
+
+2010-05-04T02:55:32.000000Z
+a2f0c15f18ce8d11d6a7513c40ca7218
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+TODO
+file
+
+
+
+
+2010-05-04T02:55:32.000000Z
+b42837f1a124dac0798011c6a61e8118
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+procps
+dir
+
+applets
+dir
+
+Makefile.flags
+file
+
+
+
+
+2010-05-04T02:55:32.000000Z
+1e1bec4c93fb4c4b7cec2f9f4c7d8675
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+editors
+dir
+
+util-linux
+dir
+
+Config.in
+file
+
+
+
+
+2010-05-04T02:55:32.000000Z
+e180710d804f4023ea83bc3bd5f92477
+2009-03-22T09:36:57.031250Z
+15
+carl
+
+printutils
+dir
+
+examples
+dir
+

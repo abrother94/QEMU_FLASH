@@ -1,0 +1,330 @@
+/* This is a generated file, don't edit */
+
+#define NUM_APPLETS 106
+
+const char applet_names[] ALIGN1 = ""
+"[" "\0"
+"[[" "\0"
+"addgroup" "\0"
+"adduser" "\0"
+"adjtimex" "\0"
+"ash" "\0"
+"awk" "\0"
+"basename" "\0"
+"brctl" "\0"
+"cal" "\0"
+"cat" "\0"
+"chgrp" "\0"
+"chmod" "\0"
+"chown" "\0"
+"chpasswd" "\0"
+"chroot" "\0"
+"cp" "\0"
+"crond" "\0"
+"crontab" "\0"
+"cryptpw" "\0"
+"cut" "\0"
+"date" "\0"
+"delgroup" "\0"
+"deluser" "\0"
+"depmod" "\0"
+"df" "\0"
+"dhcprelay" "\0"
+"dmesg" "\0"
+"echo" "\0"
+"egrep" "\0"
+"expr" "\0"
+"fgrep" "\0"
+"free" "\0"
+"freeramdisk" "\0"
+"ftpget" "\0"
+"ftpput" "\0"
+"grep" "\0"
+"halt" "\0"
+"head" "\0"
+"hostname" "\0"
+"hush" "\0"
+"ifconfig" "\0"
+"init" "\0"
+"init" "\0"
+"insmod" "\0"
+"ip" "\0"
+"ipaddr" "\0"
+"ipcalc" "\0"
+"iplink" "\0"
+"iproute" "\0"
+"iprule" "\0"
+"kill" "\0"
+"killall" "\0"
+"klogd" "\0"
+"ln" "\0"
+"logger" "\0"
+"login" "\0"
+"logread" "\0"
+"ls" "\0"
+"lsmod" "\0"
+"mesg" "\0"
+"mkdir" "\0"
+"mknod" "\0"
+"modprobe" "\0"
+"more" "\0"
+"mount" "\0"
+"mv" "\0"
+"netstat" "\0"
+"nslookup" "\0"
+"passwd" "\0"
+"pidof" "\0"
+"ping" "\0"
+"poweroff" "\0"
+"ps" "\0"
+"pwd" "\0"
+"readprofile" "\0"
+"reboot" "\0"
+"rm" "\0"
+"rmdir" "\0"
+"rmmod" "\0"
+"route" "\0"
+"run-parts" "\0"
+"script" "\0"
+"sed" "\0"
+"sh" "\0"
+"sleep" "\0"
+"strings" "\0"
+"svlogd" "\0"
+"sync" "\0"
+"sysctl" "\0"
+"syslogd" "\0"
+"tail" "\0"
+"telnet" "\0"
+"telnetd" "\0"
+"test" "\0"
+"top" "\0"
+"touch" "\0"
+"traceroute" "\0"
+"udhcpc" "\0"
+"udhcpd" "\0"
+"umount" "\0"
+"uname" "\0"
+"uptime" "\0"
+"vconfig" "\0"
+"vi" "\0"
+"which" "\0"
+;
+
+int (*const applet_main[])(int argc, char **argv) = {
+test_main,
+test_main,
+addgroup_main,
+adduser_main,
+adjtimex_main,
+ash_main,
+awk_main,
+basename_main,
+brctl_main,
+cal_main,
+cat_main,
+chgrp_main,
+chmod_main,
+chown_main,
+chpasswd_main,
+chroot_main,
+cp_main,
+crond_main,
+crontab_main,
+cryptpw_main,
+cut_main,
+date_main,
+deluser_main,
+deluser_main,
+depmod_main,
+df_main,
+dhcprelay_main,
+dmesg_main,
+echo_main,
+grep_main,
+expr_main,
+grep_main,
+free_main,
+freeramdisk_main,
+ftpgetput_main,
+ftpgetput_main,
+grep_main,
+halt_main,
+head_main,
+hostname_main,
+hush_main,
+ifconfig_main,
+init_main,
+init_main,
+insmod_main,
+ip_main,
+ipaddr_main,
+ipcalc_main,
+iplink_main,
+iproute_main,
+iprule_main,
+kill_main,
+kill_main,
+klogd_main,
+ln_main,
+logger_main,
+login_main,
+logread_main,
+ls_main,
+lsmod_main,
+mesg_main,
+mkdir_main,
+mknod_main,
+modprobe_main,
+more_main,
+mount_main,
+mv_main,
+netstat_main,
+nslookup_main,
+passwd_main,
+pidof_main,
+ping_main,
+halt_main,
+ps_main,
+pwd_main,
+readprofile_main,
+halt_main,
+rm_main,
+rmdir_main,
+rmmod_main,
+route_main,
+run_parts_main,
+script_main,
+sed_main,
+ash_main,
+sleep_main,
+strings_main,
+svlogd_main,
+sync_main,
+sysctl_main,
+syslogd_main,
+tail_main,
+telnet_main,
+telnetd_main,
+test_main,
+top_main,
+touch_main,
+traceroute_main,
+udhcpc_main,
+udhcpd_main,
+umount_main,
+uname_main,
+uptime_main,
+vconfig_main,
+vi_main,
+which_main,
+};
+const uint16_t applet_nameofs[] ALIGN2 = {
+0x0000,
+0x0002,
+0x0005,
+0x000e,
+0x0016,
+0x001f,
+0x0023,
+0x0027,
+0x0030,
+0x0036,
+0x003a,
+0x003e,
+0x0044,
+0x004a,
+0x0050,
+0x0059,
+0x0060,
+0x0063,
+0x8069,
+0x0071,
+0x0079,
+0x007d,
+0x0082,
+0x008b,
+0x0093,
+0x009a,
+0x009d,
+0x00a7,
+0x00ad,
+0x00b2,
+0x00b8,
+0x00bd,
+0x00c3,
+0x00c8,
+0x00d4,
+0x00db,
+0x00e2,
+0x00e7,
+0x00ec,
+0x00f1,
+0x00fa,
+0x00ff,
+0x0108,
+0x010d,
+0x0112,
+0x0119,
+0x011c,
+0x0123,
+0x012a,
+0x0131,
+0x0139,
+0x0140,
+0x0145,
+0x014d,
+0x0153,
+0x0156,
+0x815d,
+0x0163,
+0x016b,
+0x016e,
+0x0174,
+0x0179,
+0x017f,
+0x0185,
+0x018e,
+0x0193,
+0x0199,
+0x019c,
+0x01a4,
+0x81ad,
+0x01b4,
+0x41ba,
+0x01bf,
+0x01c8,
+0x01cb,
+0x01cf,
+0x01db,
+0x01e2,
+0x01e5,
+0x01eb,
+0x01f1,
+0x01f7,
+0x0201,
+0x0208,
+0x020c,
+0x020f,
+0x0215,
+0x021d,
+0x0224,
+0x0229,
+0x0230,
+0x0238,
+0x023d,
+0x0244,
+0x024c,
+0x0251,
+0x0255,
+0x425b,
+0x0266,
+0x026d,
+0x0274,
+0x027b,
+0x0281,
+0x0288,
+0x0290,
+0x0293,
+};
+#define MAX_APPLET_NAME_LEN 11

@@ -1,0 +1,162 @@
+/bin/bash: arm-linux-gnueabi-: command not found
+This is uboot study test log !!!!!
+Configuring for versatile board...
+Variant:: versatilepb
+Generating include/autoconf.mk.dep
+for dir in tools examples api_examples ; do make -C $dir _depend ; done
+make[1]: Entering directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/tools'
+ln -s ../common/env_embedded.c env_embedded.c
+ln -s ../include/zlib.h zlib.h
+ln -s ../lib_generic/crc32.c crc32.c
+ln -s ../lib_generic/md5.c md5.c
+ln -s ../lib_generic/sha1.c sha1.c
+ln -s ../common/image.c image.c
+if [ ! -f mkimage.h ] ; then \
+		ln -s ../tools/mkimage.h mkimage.h; \
+	fi
+if [ ! -f fdt_host.h ] ; then \
+		ln -s ../tools/fdt_host.h fdt_host.h; \
+	fi
+make[1]: Nothing to be done for '_depend'.
+make[1]: Leaving directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/tools'
+make[1]: Entering directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/examples'
+examples/Makefile last resort rule
+examples/Makefile last resort rule
+examples/Makefile last resort rule
+examples/Makefile last resort rule
+examples/Makefile last resort rule
+make[1]: Leaving directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/examples'
+make[1]: Entering directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/api_examples'
+make[1]: Nothing to be done for '_depend'.
+make[1]: Leaving directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/api_examples'
+Generating include/autoconf.mk
+make -C tools all
+make[1]: Entering directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/tools'
+gcc -Wall -pedantic -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o img2srec.o img2srec.c
+gcc -Wall -pedantic -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O  -o img2srec img2srec.o
+strip img2srec
+gcc -g -Wall -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o mkimage.o mkimage.c
+gcc -g -Wall -pedantic -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o crc32.o crc32.c
+gcc -g -Wall -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o image.o image.c
+gcc -g -Wall -pedantic -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o md5.o md5.c
+gcc -g -Wall -pedantic -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o sha1.o sha1.c
+ln -s ../libfdt/libfdt_internal.h libfdt_internal.h
+ln -s ../libfdt/fdt.c fdt.c
+gcc -g -Wall -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o fdt.o fdt.c
+ln -s ../libfdt/fdt_ro.c fdt_ro.c
+gcc -g -Wall -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o fdt_ro.o fdt_ro.c
+ln -s ../libfdt/fdt_rw.c fdt_rw.c
+gcc -g -Wall -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o fdt_rw.o fdt_rw.c
+ln -s ../libfdt/fdt_strerror.c fdt_strerror.c
+gcc -g -Wall -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o fdt_strerror.o fdt_strerror.c
+ln -s ../libfdt/fdt_wip.c fdt_wip.c
+gcc -g -Wall -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o fdt_wip.o fdt_wip.c
+gcc -Wall -pedantic -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O  -o mkimage mkimage.o crc32.o image.o md5.o sha1.o fdt.o fdt_ro.o fdt_rw.o fdt_strerror.o fdt_wip.o
+strip mkimage
+gcc -g -Wall -pedantic -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o envcrc.o envcrc.c
+gcc -g  -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -c -o env_embedded.o env_embedded.c
+gcc -Wall -pedantic -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -o envcrc envcrc.o crc32.o env_embedded.o sha1.o
+gcc -g -Wall -pedantic -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o ubsha1.o ubsha1.c
+gcc -Wall -pedantic -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -o ubsha1 ubsha1.o sha1.o
+gcc -g -Wall -pedantic -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o gen_eth_addr.o gen_eth_addr.c
+gcc -Wall -pedantic -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O  -o gen_eth_addr gen_eth_addr.o
+strip gen_eth_addr
+gcc -Wall -pedantic -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O -c -o bmp_logo.o bmp_logo.c
+gcc -Wall -pedantic -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include2 -idirafter /home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -DTEXT_BASE=0x01000000 -DUSE_HOSTCC -O  -o bmp_logo bmp_logo.o
+strip bmp_logo
+./bmp_logo logos/denx.bmp >/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include/bmp_logo.h
+make[1]: Leaving directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/tools'
+make -C examples all
+make[1]: Entering directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/examples'
+examples/Makefile last resort rule
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o hello_world.o hello_world.c
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o stubs.o stubs.c
+arm-linux-gnueabi-ar crv libstubs.a stubs.o
+a - stubs.o
+arm-linux-gnueabi-ld -g  -Ttext 0xc100000 \
+		-o hello_world -e hello_world hello_world.o libstubs.a \
+		-L/usr/lib/gcc/arm-linux-gnueabi/4.9 -lgcc
+arm-linux-gnueabi-objcopy -O srec hello_world hello_world.srec 2>/dev/null
+arm-linux-gnueabi-objcopy -O binary hello_world hello_world.bin 2>/dev/null
+examples/Makefile last resort rule
+make[1]: Leaving directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/examples'
+make -C api_examples all
+make[1]: Entering directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/api_examples'
+arm-linux-gnueabi-ar crv libglue.a 
+make[1]: Leaving directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/api_examples'
+make -C cpu/arm926ejs start.o
+make[1]: Entering directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/cpu/arm926ejs'
+arm-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -c -o start.o start.S
+make[1]: Leaving directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/cpu/arm926ejs'
+make -C lib_generic/
+make[1]: Entering directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/lib_generic'
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o crc16.o crc16.c
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o crc32.o crc32.c
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o ctype.o ctype.c
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o display_options.o display_options.c
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o div64.o div64.c
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o gunzip.o gunzip.c
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o lmb.o lmb.c
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o ldiv.o ldiv.c
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o sha1.o sha1.c
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o string.o string.c
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o strmhz.o strmhz.c
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o vsprintf.o vsprintf.c
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o zlib.o zlib.c
+arm-linux-gnueabi-ar crv libgeneric.a crc16.o crc32.o ctype.o display_options.o div64.o gunzip.o lmb.o ldiv.o sha1.o string.o strmhz.o vsprintf.o zlib.o
+a - crc16.o
+a - crc32.o
+a - ctype.o
+a - display_options.o
+a - div64.o
+a - gunzip.o
+a - lmb.o
+a - ldiv.o
+a - sha1.o
+a - string.o
+a - strmhz.o
+a - vsprintf.o
+a - zlib.o
+make[1]: Leaving directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/lib_generic'
+make -C lib_generic/lzma/
+make[1]: Entering directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/lib_generic/lzma'
+arm-linux-gnueabi-ar crv liblzma.a 
+make[1]: Leaving directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/lib_generic/lzma'
+make -C cpu/arm926ejs/
+make[1]: Entering directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/cpu/arm926ejs'
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o interrupts.o interrupts.c
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o cpu.o cpu.c
+arm-linux-gnueabi-ar crv libarm926ejs.a interrupts.o cpu.o
+a - interrupts.o
+a - cpu.o
+make[1]: Leaving directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/cpu/arm926ejs'
+make -C cpu/arm926ejs/versatile/
+make[1]: Entering directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/cpu/arm926ejs/versatile'
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o timer.o timer.c
+arm-linux-gnueabi-ar crv libversatile.a timer.o
+a - timer.o
+make[1]: Leaving directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/cpu/arm926ejs/versatile'
+make -C lib_arm/
+make[1]: Entering directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/lib_arm'
+arm-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -c -o _ashldi3.o _ashldi3.S
+arm-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -c -o _ashrdi3.o _ashrdi3.S
+arm-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -c -o _divsi3.o _divsi3.S
+arm-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -c -o _modsi3.o _modsi3.S
+arm-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -c -o _udivsi3.o _udivsi3.S
+arm-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -c -o _umodsi3.o _umodsi3.S
+arm-linux-gnueabi-gcc  -D__ASSEMBLY__ -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -c -o div64.o div64.S
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o board.o board.c
+arm-linux-gnueabi-gcc -g  -Os   -fno-strict-aliasing  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x01000000 -I/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.9/include -pipe  -DCONFIG_ARM -D__ARM__ -march=armv5te -mabi=apcs-gnu -mno-thumb-interwork -Wall -Wstrict-prototypes -fno-stack-protector -c -o bootm.o bootm.c
+bootm.c:1:6: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ void dghere()
+      ^
+bootm.c:7:54: error: unknown type name 'bootm_headers_t'
+ int do_bootm_linux(int flag, int argc, char *argv[], bootm_headers_t *images)
+                                                      ^
+/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/config.mk:217: recipe for target 'bootm.o' failed
+make[1]: *** [bootm.o] Error 1
+make[1]: Leaving directory '/home/nick_huang/OpenNSL/QEMU_FLASH-3.X/u-boot-armdev.git/lib_arm'
+Makefile:357: recipe for target 'lib_arm/libarm.a' failed
+make: *** [lib_arm/libarm.a] Error 2
+cp: cannot stat 'u-boot.bin': No such file or directory
+cp: cannot stat 'u-boot': No such file or directory
