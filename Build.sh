@@ -8,6 +8,9 @@ if [ "${SUDOCHK}" != "" ];then
     echo "You need have sudo right to build this...Sorry!"
 fi
 
+#pre-install
+sudo apt-get install libglib2.0-dev
+
 echo "extract sample rootf"
 sudo tar zxvf rootfs.tar.gz
 
