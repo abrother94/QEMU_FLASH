@@ -2,7 +2,7 @@
 
 VER=$1
 
-if [ $VER =="" ];then
+if [ $VER == "" ];then
     echo "2.6.0 support only"
     exit
 fi
