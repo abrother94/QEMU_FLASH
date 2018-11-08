@@ -1,6 +1,7 @@
 #/bin/bash
-
 #Build Qemu 2.6
+PATH=$PATH:$HOME/bin:./:/bin/:/usr/bin/
+export PATH
 
 SUDOCHK=`sudo -v`
 
