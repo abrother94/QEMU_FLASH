@@ -1,7 +1,9 @@
 # QEMU_FLASH
-# This QEMU emulate ARM versatile hardware, and start from u-boot to runtime linux kernel (4.2) environment from flash.
-# It use cross-compile from ONL docker image (Debian jesse with arm-linux-eabi-) and its library.
-# You need have docker/container build environment to build whole code.
+
+<br>This QEMU emulate ARM versatile hardware, and start from u-boot to runtime linux kernel (4.2) 
+environment from flash.
+<br>It use cross-compile from ONL docker image (Debian jesse with arm-linux-eabi-) and its library.
+<br>You need have docker/container build environment to build whole code.
 
 1. ./One_punch_build.sh
 
