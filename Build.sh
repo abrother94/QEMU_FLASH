@@ -15,6 +15,8 @@ sudo apt-get install libglib2.0-dev
 echo "extract sample rootf"
 sudo tar zxvf rootfs.tar.gz
 
+cp -rf /lib/arm-linux-gnueabi/* rootfs/lib/
+
 cd qemu
 echo "Build QEMU...."
 ./Build.sh "2.6.0" 
