@@ -40,6 +40,7 @@ echo "Build busybox...."
 cd busybox
 ./Build.sh
 
+cd ../
 #Build nboot
 cd nboot
 ./Build_nboot.sh
