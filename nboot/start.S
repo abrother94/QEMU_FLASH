@@ -30,29 +30,31 @@ _bss_start:
 
 reset:
 
-/*load address of _start , this should be addrsss in RAM (calulate from PC) to r0 */
+/*load address of _start , this should be addrsss in RAM (calulate from PC) to r0 (0x34000000) */
 
 adr     r0, _start 
 
-/*load content in addres _TETXT_BASE into r1*/
+/*load content in addres _TETXT_BASE into r1 (0x10000000)  */
 
 ldr     r1, _TEXT_BASE                     
 ldr     r2, _armboot_start
 ldr     r3, _bss_start
 
-/*Calculate size of code size (bss address - text address)and put into r2*/
+/*Calculate size of code size (bss address - text address)and put into r2 (0x34000080)*/
 
 sub     r2, r3, r2              
 
-/* r0 (RAM start address ) + code size  = r2 = copy end point address  */
+/* r0 (RAM start address ) + code size  = r2 = copy end point address   */
 
 add     r2, r0, r2              
 
+/* cp code from r0 (flash start address)  to r1 (RAM start address)*/
+
 copy_loop:
-ldmia   r0!, {r3-r10}           
+ldmia   r0!, {r3-r10}      
 stmia   r1!, {r3-r10}           
 
-/*Check if r0 (start R0 addess) */
+/*Check if r0 (start R0 addess) is the R2 code end address inf flash */
 
 cmp     r0, r2                  
 ble     copy_loop
