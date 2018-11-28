@@ -9,6 +9,9 @@ label: .word value
 
 .globl _start
 _start:
+/*
+#include "load_constant_value_to_regs.S"
+*/
 b       reset
 
 /* Address _TEXT_BASE value is 4bytes 0x10000000 */
