@@ -36,8 +36,7 @@ adr     r0, _start
 
 /*load content in addres _TETXT_BASE into r1*/
 
-ldr     r1, _TEXT_BASE          
-cmp     r0, r1                  
+ldr     r1, _TEXT_BASE                     
 ldr     r2, _armboot_start
 ldr     r3, _bss_start
 
