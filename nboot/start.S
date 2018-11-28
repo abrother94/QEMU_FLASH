@@ -53,7 +53,7 @@ copy_loop:
 ldmia   r0!, {r3-r10}           
 stmia   r1!, {r3-r10}           
 
-/*Check if r0 (start R0 addess) *
+/*Check if r0 (start R0 addess) */
 
 cmp     r0, r2                  
 ble     copy_loop
