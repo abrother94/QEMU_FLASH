@@ -40,6 +40,12 @@ adr     r0, _start
 /*load content in addres _TETXT_BASE into r1 (0x10000000)  */
 
 ldr     r1, _TEXT_BASE                     
+
+/* Test if at RAM , if yes, go to RAM to excute code from start again  */
+
+cmp     r0, r1                 
+beq     stack_setup
+
 ldr     r2, _armboot_start
 ldr     r3, _bss_start
 
@@ -61,5 +67,12 @@ stmia   r1!, {r3-r10}
 
 cmp     r0, r2                  
 ble     copy_loop
+
+/* Jump to RAM (0x1000000) to excute again */
+ldr     pc, _TEXT_BASE
+
 stack_setup:
-bl      c_entry
+
+ldr     pc, _c_entry
+_c_entry:
+ .word c_entry
