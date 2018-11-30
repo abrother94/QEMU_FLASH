@@ -33,7 +33,7 @@ _bss_start:
 
 reset:
 
-/*load address of _start , this should be addrsss in RAM (calulate from PC) to r0 (0x34000000) */
+/*load address of _start , this should be addrsss in flash (calulate from PC) to r0 (0x34000000) */
 
 adr     r0, _start 
 
@@ -58,6 +58,16 @@ sub     r2, r3, r2
 add     r2, r0, r2              
 
 /* cp code from r0 (flash start address)  to r1 (RAM start address)*/
+/* ldmia r0!, {r3-r10}
+   Load Multiple Increment After
+   Load data from address in r0 , r0+4 , ....r0+28, to r3, r4 ....r10
+   and then r0 content = address in r0 + 32 (Because of ! sign)
+
+   stmia
+   STore Mutliple Increment After
+   store data from address in r3 ... r10 to address in r1 
+   and then r1 = r1 + 32 (Because of ! sign)
+*/
 
 copy_loop:
 ldmia   r0!, {r3-r10}      
