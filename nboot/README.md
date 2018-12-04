@@ -16,3 +16,5 @@
 ![Screenshot](imgs/stack_start.png)   
 * Prepare stack size 
 
+![Screenshot](imgs/stack_push.png)   
+* push stack
