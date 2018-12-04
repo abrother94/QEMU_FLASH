@@ -6,7 +6,13 @@ dd if=nboot.bin of=./flash.img bs=256k conv=notrunc
 # gdb remote debug
 #./qemu-system-arm -M versatilepb -m 256  -nographic -pflash ./flash.img -s -S
 #./qemu-system-arm-2.6.0-flash -M versatilepb  -m 256 -nographic -pflash ./flash.img -s -S
-./qemu-system-arm-2.6.0-flash -M versatilepb  -m 256 -nographic -pflash ./flash.img 
+
+if [ "$1" = "R" ];then
+./qemu-system-arm-2.6.0-flash -M versatilepb  -m 256 -nographic -pflash ./flash.img -s -S
+else
+./qemu-system-arm-2.6.0-flash -M versatilepb  -m 256 -nographic -pflash ./flash.img
+fi
+
 reset
 #./qemu-system-arm -kernel zImage -M versatilepb -m 128M -nographic -initrd testrootfs.img -append "console=ttyAMA0 root=/dev/ram rdinit=/test" 
 #./qemu-system-arm -M versatilepb -m 200  -net nic -net tap -nographic -pflash ./flash.img
