@@ -7,6 +7,8 @@ label: .word value
    #define CONFIG_SYS_FLASH_BASE   0x34000000
 */
 
+#include "config.h"
+
 .globl _start
 _start:
 /*
@@ -81,7 +83,14 @@ ble     copy_loop
 /* Jump to RAM (0x1000000) to excute again */
 ldr     pc, _TEXT_BASE
 
+
+/*define in config.h*/
 stack_setup:
+ldr     r0, _TEXT_BASE                                                /* upper 128 KiB: relocated uboot   */
+sub     r0, r0,                 #CONFIG_SYS_MALLOC_LEN                /* malloc area                      */
+sub     r0, r0,                 #CONFIG_SYS_GBL_DATA_SIZE             /* bdinfo                           */
+sub     r0, r0,                 #(CONFIG_STACKSIZE_IRQ+CONFIG_STACKSIZE_FIQ)
+sub     sp, r0, #12                                                   /* leave 3 words for abort-stack    */
 
 ldr     pc, _c_entry
 _c_entry:
